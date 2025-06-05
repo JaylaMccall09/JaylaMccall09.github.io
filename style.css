@@ -1,5 +1,6 @@
 body {
-    background: rgba(217, 174, 128, 0.527);
+    background: #EEAECA;
+    background: radial-gradient(circle,rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
     color: rgb(45, 45, 45);
     padding: 10px;
     font-family: Arial, Helvetica, sans-serif;
@@ -46,7 +47,7 @@ a {
 
 /* main container area beneath menu */
 main {
-    background: rgb(228, 219, 245);
+    background: rgb(243, 120, 153);
     display: flex;
     margin-top: 20px;
     font-family: "Lucida Console", "Courier New", monospace;
@@ -59,14 +60,15 @@ main {
 }
 
 .sidebar-img {
-    width: 200px;
-    height: 200px;
+    width: 210px;
+    height: 230px;
 }
 
 .content {
     flex: 1;
     padding: 15px;
     font-family: "Lucida Console", "Courier New", monospace;
+    font-size: 20px;
     
 }
 
@@ -76,6 +78,7 @@ main {
     padding: 8px;
     margin-top: 20px;
     font-family: "Lucida Console", "Courier New", monospace;
+    font-size: 18px;
 }
 
 h2, h3 {
