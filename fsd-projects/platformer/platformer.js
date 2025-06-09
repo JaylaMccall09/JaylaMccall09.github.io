@@ -36,16 +36,25 @@ $(function () {
      createPlatform(450, 500, 200, 10);
      createPlatform(900, 200, 5, 200);
      createPlatform(900, 400, 400, 5);
-     createPlatform(600, 400, 150, 10);
+     createPlatform(300, 400, 150, 10);
      createPlatform(750, 300, 100, 10);
-     createPlatform(1200, 250, 100, 10);
-     createPlatform(1050, 200, 100, 10);
+     createPlatform(1200, 300, 100, 10);
+     createPlatform(900, 200, 200, 10);
+     createPlatform(600, 300, 150, 10);
+     createPlatform(350, 200, 200, 10);
+     createPlatform(150, 150, 150, 10);
+     createPlatform(1100, 600, 5, 200);
+     createPlatform(1100, 600, 200, 5);
     
 
 
 
     // TODO 3 - Create Collectables
-     
+     createCollectable("music", 900, 350);
+     createCollectable("penguin", 500, 450);
+     createCollectable("controller1", 200, 100);
+     createCollectable("controller2", 1100, 700);
+
 
 
 
@@ -53,7 +62,7 @@ $(function () {
     // TODO 4 - Create Cannons
      createCannon("bottom", 140, 1500);
      createCannon("bottom", 440, 2500);
-     createCannon("left", 255, 2000);
+     createCannon("top", 835, 2000);
 
     
     

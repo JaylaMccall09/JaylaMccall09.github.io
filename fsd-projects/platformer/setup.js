@@ -98,4 +98,8 @@ var collectableList = {
   kennedi: { image: "images/collectables/kennedi-head.png" },
   max: { image: "images/collectables/max-head.png" },
   steve: { image: "images/collectables/steve-head.png" },
+  music: { image: "images/collectables/radio-music-notes.png" },
+  penguin: { image: "images/collectables/penguin-listening-to-music.png" },
+  controller1: { image: "images/collectables/playstation4-controller-game-clipart-xl.png" },
+  controller2: { image: "images/collectables/pngtree-machine-video-game-controller-clip-art-png-image_6027733.png" },
 };
