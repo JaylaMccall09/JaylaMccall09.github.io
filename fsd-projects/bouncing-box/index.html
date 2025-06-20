@@ -33,6 +33,7 @@
 	<div class="box">?</div>
 
 	<script>
+		let boardWidth = 600;
 		(function () {
 			'use strict'
 			/* global jQuery */
@@ -77,7 +78,8 @@
 			turn it around! 
 			*/
 			function update() {
-				moveBoxTo(boardWidth);
+				positionX = positionX + 10;
+				moveBoxTo(positionX);
 				positionX += speed;
 
 				if (positionX > boardWidth) {
@@ -114,6 +116,7 @@
 
 
 		})();
+		setInterval(update, 100);
 	</script>
 </body>
 
