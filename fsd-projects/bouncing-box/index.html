@@ -33,7 +33,6 @@
 	<div class="box">?</div>
 
 	<script>
-		
 		(function () {
 			'use strict'
 			/* global jQuery */
@@ -47,13 +46,11 @@
 			var boardWidth = board.width();	// the maximum X-Coordinate of the screen
 
 			// Every 50 milliseconds, call the update Function (see below)
-			setInterval(update,30);
-			
-
+			setInterval(update, 50);
 
 			// Every time the box is clicked, call the handleBoxClick Function (see below)
 			box.on('click', handleBoxClick);
-			
+
 			// moves the Box to a new position on the screen along the X-Axis
 			function moveBoxTo(newPositionX) {
 				box.css("left", newPositionX);
@@ -61,7 +58,7 @@
 
 			// changes the text displayed on the Box
 			function changeBoxText(newText) {
-				box.text(0);
+				box.text(newText);
 			}
 
 			//////////////////////////////////////////////////////////////////
@@ -79,16 +76,12 @@
 			turn it around! 
 			*/
 			function update() {
-				moveBoxTo(positionX);
-				positionX = positionX + speed;
-
-				if (positionX > boardWidth) {
-					speed = speed * -1;
-				}
-
-				if (positionX < 0) {
-					speed = speed * -1;
-			 	}
+			  moveBoxTo(positionX);
+			  positionX = positionX + speed;
+			if (positionX > boardWidth)
+				speed = speed * -1;
+			if (positionX < 0)
+				speed = speed * -1
 			};
 
 			/* 
@@ -102,14 +95,7 @@
 			 speed = 3 * points + 10;
 			 changeBoxText(points);
 			};
-
-
-
-
-
-		})();
-	
-	</script>
-</body>
-
+		  })();
+		</script>
+	</body>
 </html>
